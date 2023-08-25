@@ -2,27 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=deszwvice-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Type Speed</title>
   </head>
   <body>
     <div class="container">
       <div class="stats">
         <p>Time: <span id="timer">0s</span></p>
-        <p style="color: green;">Rezult: <span id="result">0</span></p>
+        <p style="color: green">Rezult: <span id="result">0</span></p>
       </div>
       <div id="quote">
-        Lorem ipsum dolor sit amet consectetur, 
-        adipisicing elit. Eaque omnis quibusdam 
-        iure explicabo aperiam sit, quis quam, 
-        beatae earum nesciunt odio aliquam ut eum 
-        autem!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque omnis
+        quibusdam iure explicabo aperiam sit, quis quam, beatae earum nesciunt
+        odio aliquam ut eum autem!
       </div>
-      <textarea name="" id="text-input" 
-      placeholder="Type here"> </textarea>
-      <button id="start">Start</button>
-      </div>
+      <textarea
+        name=""
+        id="text-input"
+        oninput="textInput()"
+        placeholder="Type here"
+      ></textarea>
+      <button id="start" onclick="startGame()">Start</button>
     </div>
     <script src="script.js"></script>
   </body>
